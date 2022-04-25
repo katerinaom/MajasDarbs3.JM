@@ -48,3 +48,5 @@ Console.WriteLine();
 Console.WriteLine("===============================");
 Console.WriteLine();
 
+Product bed = new Product(double.MaxValue);
+
