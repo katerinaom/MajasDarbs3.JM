@@ -2,43 +2,36 @@
 {
     public class Product
     {
-        public Product(double MaxValue)
-        {
-            Height = 100;
-            Length = 200;
-            Width = 80;
-            Weight = 50;
-        }
-        public double Height { get; }
-        public double Length { get; }
-        public double Width { get; }
-        public double Weight { get; }
+        public string Name { get; set; }
 
-        public void HeightSize()
+        public double Height { get; } = 100;
+        public double Length { get; } = 200;
+        public double Width { get; } = 80;
+        public double Weight { get; } = 40;
+
+        public void Buy()
         {
-            Height = 100;
-            Console.WriteLine($"{Product} height is {Height}");
+            Console.WriteLine($"Want to buy {Name} ");
         }
 
-        public void Length()
+        public void Size()
         {
-            
+            Console.WriteLine($"The {Name} size is: Height = {Height}, length = {Length}, width = {Width} and weight = {Weight}. ");
         }
 
-        public void Width()
-        {
-            
-        }
 
-        public double Weidth()
-        {
-            
-        }
 
-        public void Stop()
-        {
-        }
+
+
+
 
 
     }
+
+
+
+
+
+
+
 }

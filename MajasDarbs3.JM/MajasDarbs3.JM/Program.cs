@@ -4,7 +4,7 @@ Phone samsung = new Phone();
 
 samsung.Brand = "Samsung";
 samsung.Model = "Galaxy";
-samsung.Size = 10.2;
+samsung.Size = 5;
 
 string samsungBrand = samsung.Brand;
 Console.WriteLine($"I have created with name: {samsungBrand}");
@@ -48,5 +48,12 @@ Console.WriteLine();
 Console.WriteLine("===============================");
 Console.WriteLine();
 
-Product bed = new Product(double.MaxValue);
+Product bed = new Product();
+
+bed.Name = "Bed";
+bed.Buy();
+
+Console.WriteLine($"What is the size of the {bed.Name}? " );
+bed.Size();
+
 
