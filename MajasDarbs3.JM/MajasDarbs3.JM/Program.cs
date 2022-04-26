@@ -57,3 +57,20 @@ Console.WriteLine($"What is the size of the {bed.Name}? " );
 bed.Size();
 
 
+
+Console.WriteLine();
+Console.WriteLine("===============================");
+Console.WriteLine();
+
+
+Person tom = new Person();
+tom.Name = "Tom";
+tom.Surname = "Jones";
+tom.BirthDate = 1999.10.10 ;
+
+tom.Hobby = "Reading";
+tom.Gender = true;
+tom.GetAge();
+
+Console.WriteLine($"My age is now {tom.GetAge}");
+
