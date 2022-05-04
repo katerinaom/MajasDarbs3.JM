@@ -62,15 +62,38 @@ Console.WriteLine();
 Console.WriteLine("===============================");
 Console.WriteLine();
 
+Person somebody = new Person();
 
-Person tom = new Person();
-tom.Name = "Tom";
-tom.Surname = "Jones";
-tom.BirthDate = 1999.10.10 ;
+Console.WriteLine("What is your gender?");
+string somebodygender = Console.ReadLine();
 
-tom.Hobby = "Reading";
-tom.Gender = true;
-tom.GetAge();
+Console.WriteLine("What is your name?");
+string somebodyname = Console.ReadLine();
 
-Console.WriteLine($"My age is now {tom.GetAge}");
+Console.WriteLine("What is your surname?");
+string somebodysurname = Console.ReadLine();
+
+string somebodygreeting = ($" Hello, {somebodyname} {somebodysurname}!");
+Console.WriteLine(somebodygreeting);
+
+Console.WriteLine("What is you hobby?");
+string somebodyhobby = Console.ReadLine();
+
+Console.WriteLine("When did you born? ");
+string userBirthdayYearText = Console.ReadLine();
+int birthYear = int.Parse(userBirthdayYearText);
+
+int age = DateTime.Now.Year - birthYear - 1;
+
+Console.WriteLine($"You are {age} years old now!");
+
+
+
+
+
+
+
+
+
+
 
